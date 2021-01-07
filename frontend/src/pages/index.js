@@ -23,7 +23,7 @@ const Login = () => {
             method: "POST",
             body: JSON.stringify(objLogin),
             headers: {
-                "content-Type": "application/json",
+                "content-type": "application/json",
             }
         }).then(response => {
             if (response.ok) {
@@ -31,7 +31,8 @@ const Login = () => {
             }else
             alert("dados invalidos")
         }).then(data => {
-            console.log("Token: "+ data)
+            console.log("Token: "+ data.token);
+            localStorage.setItem('token-gerir', data.token);
         })
     }
     return (
