@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Container, Form, Button } from 'react-bootstrap'
-import logo from '../../src/logo.svg'
+import logo from '../../logo.svg'
 
 
 const Login = () => {
